@@ -1,4 +1,4 @@
-package com.fahamin.jc_botomnavbar.ui.theme
+package com.fahamin.jc_bottomnav.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

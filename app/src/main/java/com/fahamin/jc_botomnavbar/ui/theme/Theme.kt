@@ -1,4 +1,4 @@
-package com.fahamin.jc_botomnavbar.ui.theme
+package com.fahamin.jc_bottomnav.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun JC_BotomnavBarTheme(
+fun JC_BottomNavTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
