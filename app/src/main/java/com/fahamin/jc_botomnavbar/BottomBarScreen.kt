@@ -5,6 +5,7 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.ui.graphics.vector.ImageVector
+import com.fahamin.jc_botomnavbar.route.RouteManage
 
 sealed class BottomBarScreen(
     var route: String,
@@ -12,19 +13,19 @@ sealed class BottomBarScreen(
     var icon: ImageVector
 ) {
     object Home : BottomBarScreen(
-        route = "Home",
+        route = RouteManage.home,
         title = "Home",
         icon = Icons.Default.Home
     )
 
     object Setting : BottomBarScreen(
-        route = "Setting",
+        route = RouteManage.setting,
         title = "Setting",
         icon = Icons.Default.Settings
     )
 
     object More : BottomBarScreen(
-        route = "More",
+        route = RouteManage.more,
         title = "More",
         icon = Icons.Default.Menu
     )

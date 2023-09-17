@@ -15,7 +15,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material.*
 import com.fahamin.jc_botomnavbar.BottomBarScreen
-import com.fahamin.jc_botomnavbar.BottomNavGraph
+import com.fahamin.jc_botomnavbar.NavigationScreen
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -25,7 +25,7 @@ fun MainScreen() {
     Scaffold(
         bottomBar = { BottomBar(navController = navController) }
     ) {
-        BottomNavGraph(navController = navController)
+        NavigationScreen(navController = navController)
     }
 }
 
