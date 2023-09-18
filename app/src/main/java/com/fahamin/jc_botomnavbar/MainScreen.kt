@@ -14,6 +14,14 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material.*
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.TopAppBarColors
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import com.fahamin.jc_botomnavbar.BottomBarScreen
 import com.fahamin.jc_botomnavbar.NavigationScreen
 
@@ -23,6 +31,19 @@ import com.fahamin.jc_botomnavbar.NavigationScreen
 fun MainScreen() {
     val navController = rememberNavController()
     Scaffold(
+        topBar = {
+            /*  title = { Text(text = stringResource(id = titleRes)) },
+              actions = {*/
+            CenterAlignedTopAppBar(
+                title = {
+                    Text(
+                        "Centered TopAppBar",
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                },
+            )
+        },
         bottomBar = { BottomBar(navController = navController) }
     ) {
         NavigationScreen(navController = navController)

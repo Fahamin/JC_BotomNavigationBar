@@ -26,7 +26,13 @@ import com.fahamin.jc_botomnavbar.route.RouteManage
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomePage(navController: NavController) {
-    Scaffold() {
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Green),
+        contentAlignment = Alignment.Center
+    ) {
         Column(
             Modifier.padding(5.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -42,12 +48,15 @@ fun HomePage(navController: NavController) {
             }
         }
     }
+
+
 }
 
+/*
 @Composable
 @Preview
 fun HomeScreenPreview(
     navController: NavController
 ) {
     HomePage(navController)
-}
+}*/
